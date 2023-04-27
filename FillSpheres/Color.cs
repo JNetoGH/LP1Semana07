@@ -13,5 +13,14 @@
             _green = green;
         }
 
+        public byte GetRed() => this._red;
+        public void SetRed(byte newValue) => this._red = newValue;
+
+        public byte GetBlue() => this._blue;
+        public void SetBlue(byte newValue) => this._blue = newValue;
+        
+        public byte GetGreen() => this._green;           
+        public void SetGreen(byte newValue) => this._green = newValue;
+
     }
 }
