@@ -2,8 +2,6 @@
 {
     public class Color
     {
-
-
         private byte _red = 0;
         private byte _blue = 0;
         private byte _green = 0;
