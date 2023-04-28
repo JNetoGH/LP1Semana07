@@ -19,6 +19,7 @@
         /// <summary> Throws the Sphere in case it hasn't been popped </summary>
         public void Throw() => _timesThrown = _timesThrown > 0 ? _timesThrown + 1 : _timesThrown;
         
+        public Color GetColor() => _color;
         public uint GetTimesThrown() => _timesThrown;
     }
 }

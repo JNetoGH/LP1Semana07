@@ -6,7 +6,9 @@ namespace FillSpheres
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var s1 = new Sphere(new Color(255, 255, 255, 255), 5);
+            Console.WriteLine(s1.GetColor());
+            
         }
     }
 }
