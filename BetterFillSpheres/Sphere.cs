@@ -2,9 +2,9 @@
 {
     public class Sphere
     {
-        private Color Color { get; set; }
-        private float Radius { get; set; }
-        private uint TimesThrown { get; set; } = 0;
+        public Color Color { get; private set; }
+        public float Radius { get; private set; }
+        public uint TimesThrown { get; private set; } = 0;
         
         public Sphere(Color color, float radius)
         {

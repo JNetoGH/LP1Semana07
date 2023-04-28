@@ -31,7 +31,11 @@ namespace BetterFillSpheres
             Console.WriteLine("SPHERES:");
             foreach (Sphere sphere in spheres)
                 Console.WriteLine(sphere);
-            
+
+            int chosen = 1;
+            Console.WriteLine($"\nChecking color of sphere {chosen}: ");
+            Console.WriteLine($"{spheres[chosen].Color.Name}");
+
         }
     }
 }
