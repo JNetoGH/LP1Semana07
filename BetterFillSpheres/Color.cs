@@ -2,20 +2,21 @@
 {
     public class Color
     {
-        private byte Red { get; set; } = 0;
-        private byte Blue { get; set; } = 0;
-        private byte Green { get; set; } = 0;
-        private byte Alpha { get; set; } = 0;
-        private byte Grey => (byte)((Red + Blue + Red) / 3);
-                            
-        public Color(byte red, byte blue, byte green, byte alpha)
+        public byte Red { get; set; } = 0;
+        public byte Green { get; set; } = 0;
+        public byte Blue { get; set; } = 0;
+        public byte Alpha { get; set; } = 0;
+        public byte Grey => (byte)((Red + Blue + Red) / 3);
+        
+        public Color() { }
+        public Color(byte red,  byte green, byte blue, byte alpha)
         {
             Red = red;
-            Blue = blue;
             Green = green;
+            Blue = blue;
             Alpha = alpha;
         }
         
-        public override string ToString() => $"r:{Red}, b:{Blue}, g:{Green}, a:{Alpha}";
+        public override string ToString() => $"r:{Red}, g:{Green}, b:{Blue}, a:{Alpha}, grey:{Grey}";
     }
 }
